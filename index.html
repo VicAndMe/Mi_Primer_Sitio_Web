@@ -16,14 +16,14 @@
         <a href="#about" onclick="mostrarSeccion('about')"> Acerca de</a>
         <a href="#contact" onclick="mostrarSeccion('contact')"> Contacto</a>
         <a href="#registro" onclick="mostrarSeccion('registro')">Registro Usuario</a>
-        <a href="#testing" onclick="mostrarSeccion('testing')"> W3schools</a>
+        <a href="#actividades" onclick="mostrarSeccion('actividades')"> Versiones</a>
     </nav>
 
     <div class="container">
         <section id="home" class="content-section active-section">
             <h2>Inicio</h2>
             <figure>
-            <img src="https://placehold.co/1000x200?text=Hello+World" alt="Banner perfil">
+            <img src="./img/banner.png" alt="Banner perfil" width="50%" height="100%">
             <figcaption>Banner Sitio Web. Actividad06</figcaption>
             </figure>
             <p> Este Sitio es la Actividad01 - Mi Primer Sitio Web.</p>
@@ -35,12 +35,12 @@
             <p>esta sección contiene sobre el sitio web y su proposito</p>
 
             <blockquote>
-                "PIPIPIPIPI"
+                "Datos de Autor"
             </blockquote>
             <ul>
-                <li>Creado por Victor Horta.</li>
+                <li>Creado por <mark >Victor Horta.</mark></li>
                 <li>Estudiante de Ingeniería en Sistemas.</li>
-                <li>Clase: Diseño Front-End</li>
+                <li>Clase: <small>Diseño Front-End</small></li>
             </ul>
             <ol>
                 <li>a219214524</li>
@@ -76,36 +76,67 @@
         </section>
 
         <!--1er Elemento-->
-        <section id="testing" class="content-section">
+        <section id="actividades" class="content-section">
             <!--2do Elemento-->
-            <h1>Prueba de Diferentes Elementos</h1>
+            <h1>Registro de Actividades</h1>
             <!--3er Elemento-->
-            <p>Esta Sección esta diseñada exclusiva para cumplir con la actividad de utilizar al menos 5 elemntos de W3schools</p>
-            <!--4to Elemento-->
-            <a href="https://www.w3schools.com">W3schools</a>
+            <p>Esta Sección esta diseñada para llevar el registro de actualización de las actividades de la clase de Front-end</p>
+            
             <!--5to Elemento-->
             <table id="actividad">
                 <tr>
-                    <th>Clase</th>
                     <th>Actividad</th>
+                    <th>Descripción</th>
                     <th>Fecha</th>
                 </tr>
                 <tr>
-                    <td>Diseño de Front-End</td>
+                    <td>ACTIVIDAD 1 - MI PRIMER SITIO WEB</td>
+                    <td>Desarrollo de los primeros elementos de mi sitio web</td>
+                    <td><time datetime="23-08-2026">23/07/2026</time></td>
+                </tr>
+                <tr>
                     <td>ACTIVIDAD 2 - USO DE W3SCHOOLS</td>
-                    <td><time datetime="11-08-2026">11/08/2026</time></td>
+                    <td>Implementación de elementos del sitio web W3schools.</td>
+                    <td><time datetime="25-08-2026">25/08/2026</time></td>
+                </tr>
+                <tr>
+                    <td>ACTIVIDAD 3 - INVESTIGACION CSS</td>
+                    <td>Investigación de CSS</td>
+                    <td><time datetime="26-08-2026">26/08/2026</time></td>
+                </tr>
+                <tr>
+                    <td>ACTIVIDAD 4 - CSS EXTERNO</td>
+                    <td>Actualización de CSS</td>
+                    <td><time datetime="03-09-2026">03/09/2026</time></td>
+                </tr>
+                <tr>
+                    <td>ACTIVIDAD 5 - USO DE FORMULARIO</td>
+                    <td>Implementación de Formularios</td>
+                    <td><time datetime="09-09-2026">09/09/2026</time></td>
+                </tr>
+                <tr>
+                    <td>ACTIVIDAD 6 - EVOLUCIÓN DEL PROYECTO WEB</td>
+                    <td>Actualización general del sitio web</td>
+                    <td><time datetime="11-09-2026">11/09/2026</time></td>
                 </tr>
             </table>
-
+            
+            <fieldset>
+            <legend><h3>Links & Referencias</h3></legend>
+            <a href="https://www.w3schools.com">W3schools</a>
+            <a href="https://morguefile.com/">MorgueFile</a>
+            </fieldset>
         </section>
 
         <section id="registro" class="content-section">
-            <h2>Registro de Usuario</h2>
+            
 
             <form action="/submit_registro" method="post">
+                <fieldset>
+                    <legend><h1>Registro de Usuario</h1></legend>
                 <label for="username">Nombre de usuario:</label>
                 <input type="text" id="username" placeholder="Ejem. usuario01" autofocus autocomplete="username" required><br><br>
-
+                
                 <label for="country">País de Residencia</label><br>
                 <select id="country" name="country" required>
                     <option value="">Selecciona un País...</option>
@@ -125,6 +156,7 @@
                 <textarea name="bio" id="bio" rows="4" cols="50" placeholder="Cuéntame algo." required></textarea><br><br>
 
                 <button type="submit">Completar Registro</button>
+                </fieldset>
             </form>
         </section>
 
