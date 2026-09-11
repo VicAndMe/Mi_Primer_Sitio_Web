@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Primer Sitio Web</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/function.js"></script>
+</head>
+<body>
+    <header>
+        <h1> Bienvenido a mi primer sitio web.</h1>
+    </header>
+    <nav>
+        <a href="#home" onclick="mostrarSeccion('home')"> Inicio</a>
+        <a href="#about" onclick="mostrarSeccion('about')"> Acerca de</a>
+        <a href="#contact" onclick="mostrarSeccion('contact')"> Contacto</a>
+        <a href="#registro" onclick="mostrarSeccion('registro')">Registro Usuario</a>
+        <a href="#testing" onclick="mostrarSeccion('testing')"> W3schools</a>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="content-section active-section">
+            <h2>Inicio</h2>
+            <figure>
+            <img src="https://placehold.co/1000x200?text=Hello+World" alt="Banner perfil">
+            <figcaption>Banner Sitio Web. Actividad06</figcaption>
+            </figure>
+            <p> Este Sitio es la Actividad01 - Mi Primer Sitio Web.</p>
+            <p> Acutualmente Cumpliendo con la Actividad06</p>
+        </section>
+        
+        <section id="about" class="content-section">
+            <h2>Acerca de</h2>
+            <p>esta sección contiene sobre el sitio web y su proposito</p>
+
+            <blockquote>
+                "PIPIPIPIPI"
+            </blockquote>
+            <ul>
+                <li>Creado por Victor Horta.</li>
+                <li>Estudiante de Ingeniería en Sistemas.</li>
+                <li>Clase: Diseño Front-End</li>
+            </ul>
+            <ol>
+                <li>a219214524</li>
+                
+            </ol>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contacto</h2>
+                <form action="/submit_form" method="post">
+                    <fieldset>
+                        <legend>Información de Contacto</legend>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        
+                        <label for="email">Correo Electronico:</label>
+                        <input type="email" id="email"  name="email" required><br><br>
+                        
+                        <label for="asunto">Asunto:</label>
+                        <input list="asuntos" id="asunto" name="asunto">
+                        <datalist id="asuntos">
+                            <option value="Soporte Técnico">
+                            <option value="Consulta General">
+                            <option value="Sugerencia">
+                        </datalist><br><br>
+
+                        <label for="name">Mensaje:</label>
+                        <input type="message" name="message" required><br><br>
+
+                        <input type="submit" value="enviar">
+                    </fieldset>
+                </form>
+        </section>
+
+        <!--1er Elemento-->
+        <section id="testing" class="content-section">
+            <!--2do Elemento-->
+            <h1>Prueba de Diferentes Elementos</h1>
+            <!--3er Elemento-->
+            <p>Esta Sección esta diseñada exclusiva para cumplir con la actividad de utilizar al menos 5 elemntos de W3schools</p>
+            <!--4to Elemento-->
+            <a href="https://www.w3schools.com">W3schools</a>
+            <!--5to Elemento-->
+            <table id="actividad">
+                <tr>
+                    <th>Clase</th>
+                    <th>Actividad</th>
+                    <th>Fecha</th>
+                </tr>
+                <tr>
+                    <td>Diseño de Front-End</td>
+                    <td>ACTIVIDAD 2 - USO DE W3SCHOOLS</td>
+                    <td><time datetime="11-08-2026">11/08/2026</time></td>
+                </tr>
+            </table>
+
+        </section>
+
+
+
+        <section>
+            <h2>Tabla de Datos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Contacto</th>
+                        <th>correo</th>
+                        <th>redes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Celular: 6621237722</td>
+                        <td>a219214524@unison.mx</td>
+                        <td><a href="https://www.instagram.com/avecesvic11/" target="_blank">Instagram</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="registro" class="content-section">
+            <h2>Registro de Usuario</h2>
+
+            <form action="/submit_registro" method="post">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" placeholder="Ejem. usuario01" autofocus autocomplete="username" required><br><br>
+
+                <label for="country">País de Residencia</label><br>
+                <select id="country" name="country" required>
+                    <option value="">Selecciona un País...</option>
+                    <option value="mx">México</option>
+                    <option value="ar">Argentina</option>
+                    <option value="co">Colombia</option>
+                    <option value="es">España</option>
+                </select><br><br>
+
+                <label for="birthdate">Fecha de nacimiento:</label><br>
+                <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+                <label for="favcolor">Color de tema para tu perfil:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#3498db"><br><br>
+
+                <label for="bio">Breve biografía:</label><br>
+                <textarea name="bio" id="bio" rows="4" cols="50" placeholder="Cuéntame algo." required></textarea><br><br>
+
+                <button type="submit">Completar Registro</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2026 Mi Primer Sitio Web. Todos los derechos reservador</p>
+    </footer>
+</body>
+
+</html>
